@@ -1,4 +1,4 @@
-# Netflix GPT
+# Netflix Gemini
 
 - Create React App
 - Configured TailwindCSS 
@@ -47,6 +47,6 @@
         - Title & Description
         - MovieSuggestions
             - MovieLists * N 
-- NetflixGPT
+- NetflixGemini
     - Search Bar
     - Movie Suggestions
