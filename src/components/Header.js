@@ -42,7 +42,7 @@ const Header = () => {
 
     // Unsiubscribe when component unmounts
     return () => unsubscribe();
-  }, []);
+  }, [dispatch,navigate]);
 
   const handleGeminiSearchClick = () => {
     // Toggle Gemini Search
@@ -55,7 +55,8 @@ const Header = () => {
 
   return (
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
-      <img className="w-44 mx-auto md:mx-0 lg:mx-0" src={LOGO} alt="logo" />
+      {/* <img className="w-44 mx-auto md:mx-0 lg:mx-0" src={LOGO} alt="logo" /> */}
+      <h1 className="text-3xl p-2 font-bold font-sans w-44 mx-auto md:mx-0 lg:mx-0 md:text-4xl text-red-500">NetflixGemini</h1>
       {user && (
         <div className="flex p-2 justify-between">
           {showGeminiSearch && (
